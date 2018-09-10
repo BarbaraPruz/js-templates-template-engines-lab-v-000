@@ -8,13 +8,14 @@
     </main>
     <script src="node_modules/lodash/lodash.min.js"></script>
     <script src="index.js"></script>
-    <div>
-      <form id="post-form" onsubmit="createPost()">
-        <label for="post_content">Post Content</label>
-        <input type="text" name="post_content" id="post_content"><br>
-      </form>
-    </div>
+
       <script id="post-template" type="text/x-lodash-template">
+      <div>
+        <form id="post-form" onsubmit="createPost()">
+          <label for="post_content">Post Content</label>
+          <input type="text" name="post_content" id="post_content"><br>
+        </form>
+      </div>
           <div id="post">
             <h2>Post</h2>
             <%= post %>
