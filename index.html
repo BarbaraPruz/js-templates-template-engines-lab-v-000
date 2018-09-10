@@ -21,17 +21,18 @@
           </div>
       </script>
   </div>
-  <div>
-    <form id="comment-form" onsubmit="postComment()">
-      <label for="comment_content">Comment</label>
-      <input type="text" name="comment_content" id="comment_content"><br>
-    </form>
-  </div>
+
   <script id="page=template">
     <div id="posts"></div>
   </script>
     <script id="comments-template" type="text/x-lodash-template">
       <div id="comments">
+      <div>
+        <form id="comment-form" onsubmit="postComment()">
+          <label for="comment_content">Comment</label>
+          <input type="text" name="comment_content" id="comment_content"><br>
+        </form>
+      </div>
       <div class="comment">
         <div class="comment-body"><%= comment %></div>
       </div>
