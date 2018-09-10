@@ -17,7 +17,7 @@ function createPost() {
 function postComment() {
   event.preventDefault();
   let comment = document.getElementById("comment_content").value;
-  let commentTemplate = document.getElementById("comment-template").innerHTML;
+  let commentTemplate = document.getElementById("comments-template").innerHTML;
   //create template function
   let templateFn = _.template(commentTemplate);
   let commentDiv = document.getElementById("comments");
