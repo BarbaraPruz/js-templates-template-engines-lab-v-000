@@ -14,14 +14,12 @@
         <input type="text" name="post_content" id="post_content"><br>
       </form>
     </div>
-    <div id="posts">
       <script id="post-template" type="text/x-lodash-template">
           <div id="post">
             <h2>Post</h2>
             <%= post %>
           </div>
       </script>
-    </div>
   </div>
   <div>
     <form id="comment-form" onsubmit="postComment()">
@@ -29,13 +27,16 @@
       <input type="text" name="comment_content" id="comment_content"><br>
     </form>
   </div>
-  <div id="comments">
-    <script id="comment-template" type="text/x-lodash-template">
+  <script id="page=template">
+    <div id="posts"></div>
+    <div id="comments"></div>
+  </script>
+    <script id="comments-template" type="text/x-lodash-template">
       <div class="comment">
         <div class="comment-body"><%= comment %></div>
       </div>
     </script>
-  </div>
+
     <!-- Open this file and call `mocha.run()` in console to run tests -->
     <div id="mocha"></div>
     <script src="node_modules/mocha/mocha.js"></script>
